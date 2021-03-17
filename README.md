@@ -1,8 +1,9 @@
 # tmp
 1. Download the pytorch c++ libraray in 
        https://pytorch.org/get-started/locally/
-and
-![image](https://user-images.githubusercontent.com/27732461/111443305-5acc9f80-875d-11eb-87ac-c49d3132a231.png)
+But I do not know if the codes are compatible with the latest version. So maybe it is better to download from:
+
+https://drive.google.com/file/d/1-2G8DTXEfDLrA3jtGFuXD13xAgsokTh3/view?usp=sharing
 
 2. Put the pytorch c++ libraray, namely the folder 'libtorch' in this folder.
 3. Change the line 22 in file '/src/search/CMakeLists.txt':change it from 
