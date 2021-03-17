@@ -1,6 +1,6 @@
 # tmp
 1. Download the pytorch c++ libraray.
-2. Put the pytorch c++ libraray namely the folder 'libtorch' in this folder.
+2. Put the pytorch c++ libraray, namely the folder 'libtorch' in this folder.
 3. Change the line 22 in file '/src/search/CMakeLists.txt': change it from 'set(CMAKE_PREFIX_PATH /home/ziqi/prost-alpha/libtorch)' into 'set(CMAKE_PREFIX_PATH Path_to_libtorch)'.
 4. Go to test_bed folder and run 'python3 run-ser.py --all'.
 5. run python3 build.py 
