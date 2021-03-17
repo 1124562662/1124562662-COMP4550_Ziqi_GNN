@@ -1,0 +1,124 @@
+action
+move-east
+0
+action_end
+action
+move-north
+1
+action_end
+action
+move-south
+2
+action_end
+action
+move-west
+3
+action_end
+cpf
+robot-at(x14, y12)
+formula
+switch( (or($s(5) and($a(1) $s(0)) and($a(0) $s(0)) and($a(3) $s(0))) : $c(0)) (or(and($a(2) $s(10)) and($a(0) $s(8)) and($a(3) $s(2))) : $c(1)) ($c(1) : $s(0)) )
+formula_end
+index
+0
+cpf
+robot-at(x14, y20)
+formula
+switch( (or($s(5) and($a(2) $s(1)) and($a(0) $s(1)) and($a(3) $s(1))) : $c(0)) (or(and($a(1) $s(10)) and($a(0) $s(9)) and($a(3) $s(3))) : $c(1)) ($c(1) : $s(1)) )
+formula_end
+index
+1
+cpf
+robot-at(x21, y12)
+formula
+switch( (or($s(5) and($a(1) $s(2)) and($a(0) $s(2)) and($a(3) $s(2))) : $c(0)) (or(and($a(2) $s(11)) and($a(0) $s(0)) and($a(3) $s(4))) : $c(1)) ($c(1) : $s(2)) )
+formula_end
+index
+2
+cpf
+robot-at(x21, y20)
+formula
+switch( (or($s(5) and($a(2) $s(3)) and($a(0) $s(3)) and($a(3) $s(3))) : $c(0)) (or(and($a(1) $s(11)) and($a(0) $s(1)) and($a(3) $s(5))) : $c(1)) ($c(1) : $s(3)) )
+formula_end
+index
+3
+cpf
+robot-at(x30, y12)
+formula
+switch( (or($s(5) and($a(1) $s(4)) and($a(3) $s(4))) : $c(0)) (or(and($a(2) $s(12)) and($a(0) $s(2))) : $c(1)) ($c(1) : $s(4)) )
+formula_end
+index
+4
+cpf
+robot-at(x30, y20)
+formula
+switch( ($s(5) : $c(1)) (or($s(5) and($a(2) $s(5)) and($a(3) $s(5))) : $c(0)) (or(and($a(1) $s(12)) and($a(0) $s(3))) : $c(1)) ($c(1) : $s(5)) )
+formula_end
+index
+5
+cpf
+robot-at(x6, y12)
+formula
+switch( (or($s(5) and($a(1) $s(6)) and($a(0) $s(6))) : $c(0)) (or(and($a(2) $s(13)) and($a(3) $s(8))) : $c(1)) ($c(1) : $s(6)) )
+formula_end
+index
+6
+cpf
+robot-at(x6, y20)
+formula
+switch( (or($s(5) and($a(2) $s(7)) and($a(0) $s(7))) : $c(0)) (or(and($a(1) $s(13)) and($a(3) $s(9))) : $c(1)) ($c(1) : $s(7)) )
+formula_end
+index
+7
+cpf
+robot-at(x9, y12)
+formula
+switch( (or($s(5) and($a(1) $s(8)) and($a(0) $s(8)) and($a(3) $s(8))) : $c(0)) (or(and($a(2) $s(14)) and($a(0) $s(6)) and($a(3) $s(0))) : $c(1)) ($c(1) : $s(8)) )
+formula_end
+index
+8
+cpf
+robot-at(x9, y20)
+formula
+switch( (or($s(5) and($a(2) $s(9)) and($a(0) $s(9)) and($a(3) $s(9))) : $c(0)) (or(and($a(1) $s(14)) and($a(0) $s(7)) and($a(3) $s(1))) : $c(1)) ($c(1) : $s(9)) )
+formula_end
+index
+9
+cpf
+robot-at(x14, y15)
+formula
+switch( (or($s(5) and($a(1) $s(10)) and($a(2) $s(10)) and($a(0) $s(10)) and($a(3) $s(10))) : $c(0)) (or(and($a(1) $s(0)) and($a(2) $s(1)) and($a(0) $s(14)) and($a(3) $s(11))) : Bernoulli($c(0.510293290019035))) ($c(1) : $s(10)) )
+formula_end
+index
+10
+cpf
+robot-at(x21, y15)
+formula
+switch( (or($s(5) and($a(1) $s(11)) and($a(2) $s(11)) and($a(0) $s(11)) and($a(3) $s(11))) : $c(0)) (or(and($a(1) $s(2)) and($a(2) $s(3)) and($a(0) $s(10)) and($a(3) $s(12))) : Bernoulli($c(0.309061002451926))) ($c(1) : $s(11)) )
+formula_end
+index
+11
+cpf
+robot-at(x30, y15)
+formula
+switch( (or($s(5) and($a(1) $s(12)) and($a(2) $s(12)) and($a(3) $s(12))) : $c(0)) (or(and($a(1) $s(4)) and($a(2) $s(5)) and($a(0) $s(11))) : Bernoulli($c(0.083674353081733))) ($c(1) : $s(12)) )
+formula_end
+index
+12
+cpf
+robot-at(x6, y15)
+formula
+switch( (or($s(5) and($a(1) $s(13)) and($a(2) $s(13)) and($a(0) $s(13))) : $c(0)) (or(and($a(1) $s(6)) and($a(2) $s(7)) and($a(3) $s(14))) : Bernoulli($c(0.963977381587029))) ($c(1) : $s(13)) )
+formula_end
+index
+13
+cpf
+robot-at(x9, y15)
+formula
+switch( (or($s(5) and($a(1) $s(14)) and($a(2) $s(14)) and($a(0) $s(14)) and($a(3) $s(14))) : $c(0)) (or(and($a(1) $s(8)) and($a(2) $s(9)) and($a(0) $s(13)) and($a(3) $s(10))) : Bernoulli($c(0.763707464560866))) ($c(1) : $s(14)) )
+formula_end
+index
+14
+rewardfunction
+-($c(0) ~($s(5)))
+rewardfunction_end

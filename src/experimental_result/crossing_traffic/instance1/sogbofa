@@ -1,0 +1,103 @@
+action
+move-east
+0
+action_end
+action
+move-north
+1
+action_end
+action
+move-south
+2
+action_end
+action
+move-west
+3
+action_end
+cpf
+obstacle-at(x1, y2)
+formula
+$s(1)
+formula_end
+index
+0
+cpf
+obstacle-at(x2, y2)
+formula
+$s(11)
+formula_end
+index
+1
+cpf
+robot-at(x1, y1)
+formula
+switch( ($s(10) : $c(0)) (and($a(1) $s(2)) : $c(0)) (and($a(2) $s(3) ~($s(0))) : $c(1)) (and($a(0) $s(2)) : $c(0)) (and($a(3) $s(5)) : $c(1)) ($c(1) : $s(2)) )
+formula_end
+index
+2
+cpf
+robot-at(x1, y2)
+formula
+switch( ($s(10) : $c(0)) (and($a(1) $s(2)) : $c(1)) (and($a(1) $s(3)) : $c(0)) (and($a(2) $s(4)) : $c(1)) (and($a(2) $s(3)) : $c(0)) (and($a(0) $s(3)) : $c(0)) (and($a(3) $s(6) ~($s(1))) : $c(1)) ($c(1) : and($s(3) ~($s(0)))) )
+formula_end
+index
+3
+cpf
+robot-at(x1, y3)
+formula
+switch( ($s(10) : $c(0)) (and($a(1) $s(3) ~($s(0))) : $c(1)) (and($a(2) $s(4)) : $c(0)) (and($a(0) $s(4)) : $c(0)) (and($a(3) $s(7)) : $c(1)) ($c(1) : $s(4)) )
+formula_end
+index
+4
+cpf
+robot-at(x2, y1)
+formula
+switch( ($s(10) : $c(0)) (and($a(1) $s(5)) : $c(0)) (and($a(2) $s(6) ~($s(1))) : $c(1)) (and($a(0) $s(2)) : $c(1)) (and($a(0) $s(5)) : $c(0)) (and($a(3) $s(8)) : $c(1)) (and($a(3) $s(5)) : $c(0)) ($c(1) : $s(5)) )
+formula_end
+index
+5
+cpf
+robot-at(x2, y2)
+formula
+switch( ($s(10) : $c(0)) (and($a(1) $s(5)) : $c(1)) (and($a(1) $s(6)) : $c(0)) (and($a(2) $s(7)) : $c(1)) (and($a(2) $s(6)) : $c(0)) (and($a(0) $s(3) ~($s(0))) : $c(1)) (and($a(0) $s(6)) : $c(0)) (and($a(3) $s(9) ~($s(11))) : $c(1)) (and($a(3) $s(6)) : $c(0)) ($c(1) : and($s(6) ~($s(1)))) )
+formula_end
+index
+6
+cpf
+robot-at(x2, y3)
+formula
+switch( ($s(10) : $c(0)) (and($a(1) $s(6) ~($s(1))) : $c(1)) (and($a(2) $s(7)) : $c(0)) (and($a(0) $s(4)) : $c(1)) (and($a(0) $s(7)) : $c(0)) (and($a(3) $s(10)) : $c(1)) (and($a(3) $s(7)) : $c(0)) ($c(1) : $s(7)) )
+formula_end
+index
+7
+cpf
+robot-at(x3, y1)
+formula
+switch( ($s(10) : $c(0)) (and($a(1) $s(8)) : $c(0)) (and($a(2) $s(9) ~($s(11))) : $c(1)) (and($a(0) $s(5)) : $c(1)) (and($a(3) $s(8)) : $c(0)) ($c(1) : $s(8)) )
+formula_end
+index
+8
+cpf
+robot-at(x3, y2)
+formula
+switch( ($s(10) : $c(0)) (and($a(1) $s(8)) : $c(1)) (and($a(1) $s(9)) : $c(0)) (and($a(2) $s(10)) : $c(1)) (and($a(2) $s(9)) : $c(0)) (and($a(0) $s(6) ~($s(1))) : $c(1)) (and($a(3) $s(9)) : $c(0)) ($c(1) : and($s(9) ~($s(11)))) )
+formula_end
+index
+9
+cpf
+robot-at(x3, y3)
+formula
+switch( ($s(10) : $c(1)) ($s(10) : $c(0)) (and($a(1) $s(9) ~($s(11))) : $c(1)) (and($a(2) $s(10)) : $c(0)) (and($a(0) $s(7)) : $c(1)) (and($a(3) $s(10)) : $c(0)) ($c(1) : $s(10)) )
+formula_end
+index
+10
+cpf
+obstacle-at(x3, y2)
+formula
+Bernoulli($c(0.3))
+formula_end
+index
+11
+rewardfunction
+-($c(0) ~($s(10)))
+rewardfunction_end

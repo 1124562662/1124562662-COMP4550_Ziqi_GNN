@@ -1,0 +1,183 @@
+action
+takeCourse(CS11)
+0
+action_end
+action
+takeCourse(CS12)
+1
+action_end
+action
+takeCourse(CS21)
+2
+action_end
+action
+takeCourse(CS22)
+3
+action_end
+action
+takeCourse(CS31)
+4
+action_end
+action
+takeCourse(CS32)
+5
+action_end
+action
+takeCourse(CS41)
+6
+action_end
+action
+takeCourse(CS42)
+7
+action_end
+action
+takeCourse(CS51)
+8
+action_end
+action
+takeCourse(CS52)
+9
+action_end
+cpf
+taken(CS11)
+formula
+or($s(0) $a(0))
+formula_end
+index
+0
+cpf
+taken(CS12)
+formula
+or($s(1) $a(1))
+formula_end
+index
+1
+cpf
+taken(CS21)
+formula
+or($s(2) $a(2))
+formula_end
+index
+2
+cpf
+taken(CS22)
+formula
+or($s(3) $a(3))
+formula_end
+index
+3
+cpf
+taken(CS31)
+formula
+or($s(4) $a(4))
+formula_end
+index
+4
+cpf
+taken(CS32)
+formula
+or($s(5) $a(5))
+formula_end
+index
+5
+cpf
+taken(CS41)
+formula
+or($s(6) $a(6))
+formula_end
+index
+6
+cpf
+taken(CS42)
+formula
+or($s(7) $a(7))
+formula_end
+index
+7
+cpf
+taken(CS51)
+formula
+or($s(8) $a(8))
+formula_end
+index
+8
+cpf
+taken(CS52)
+formula
+or($s(9) $a(9))
+formula_end
+index
+9
+cpf
+passed(CS11)
+formula
+switch( (and($a(0) ~($s(10))) : Bernoulli($c(0.8))) ($c(1) : $s(10)) )
+formula_end
+index
+10
+cpf
+passed(CS12)
+formula
+switch( (and($a(1) ~($s(11))) : Bernoulli($c(0.8))) ($c(1) : $s(11)) )
+formula_end
+index
+11
+cpf
+passed(CS21)
+formula
+switch( (and($a(2) ~($s(12))) : Bernoulli(+(*(/(+($s(10) $s(11)) $c(3)) $c(0.8)) $c(0.2)))) ($c(1) : $s(12)) )
+formula_end
+index
+12
+cpf
+passed(CS22)
+formula
+switch( (and($a(3) ~($s(13))) : Bernoulli(+(*(/(+($s(10) $s(11) $s(12)) $c(4)) $c(0.8)) $c(0.2)))) ($c(1) : $s(13)) )
+formula_end
+index
+13
+cpf
+passed(CS31)
+formula
+switch( (and($a(4) ~($s(14))) : Bernoulli(+(*(/(+($s(11) $s(12)) $c(3)) $c(0.8)) $c(0.2)))) ($c(1) : $s(14)) )
+formula_end
+index
+14
+cpf
+passed(CS32)
+formula
+switch( (and($a(5) ~($s(15))) : Bernoulli(+(*(/(+($s(11) $s(12)) $c(3)) $c(0.8)) $c(0.2)))) ($c(1) : $s(15)) )
+formula_end
+index
+15
+cpf
+passed(CS41)
+formula
+switch( (and($a(6) ~($s(16))) : Bernoulli(+(*(/(+($s(11) $s(12) $s(14) $s(15)) $c(5)) $c(0.8)) $c(0.2)))) ($c(1) : $s(16)) )
+formula_end
+index
+16
+cpf
+passed(CS42)
+formula
+switch( (and($a(7) ~($s(17))) : Bernoulli(+(*(/(+($s(10) $s(11) $s(16)) $c(4)) $c(0.8)) $c(0.2)))) ($c(1) : $s(17)) )
+formula_end
+index
+17
+cpf
+passed(CS51)
+formula
+switch( (and($a(8) ~($s(18))) : Bernoulli(+(*(/(+($s(10) $s(15) $s(17)) $c(4)) $c(0.8)) $c(0.2)))) ($c(1) : $s(18)) )
+formula_end
+index
+18
+cpf
+passed(CS52)
+formula
+switch( (and($a(9) ~($s(19))) : Bernoulli(+(*(/(+($s(13) $s(15) $s(17)) $c(4)) $c(0.8)) $c(0.2)))) ($c(1) : $s(19)) )
+formula_end
+index
+19
+rewardfunction
++(*(and($a(0) ~($s(0))) $c(-1)) *(and($a(1) ~($s(1))) $c(-1)) *(and($a(2) ~($s(2))) $c(-1)) *(and($a(3) ~($s(3))) $c(-1)) *(and($a(4) ~($s(4))) $c(-1)) *(and($a(5) ~($s(5))) $c(-1)) *(and($a(6) ~($s(6))) $c(-1)) *(and($a(7) ~($s(7))) $c(-1)) *(and($a(8) ~($s(8))) $c(-1)) *(and($a(9) ~($s(9))) $c(-1)) *(and($a(0) $s(0)) $c(-2)) *(and($a(1) $s(1)) $c(-2)) *(and($a(2) $s(2)) $c(-2)) *(and($a(3) $s(3)) $c(-2)) *(and($a(4) $s(4)) $c(-2)) *(and($a(5) $s(5)) $c(-2)) *(and($a(6) $s(6)) $c(-2)) *(and($a(7) $s(7)) $c(-2)) *(and($a(8) $s(8)) $c(-2)) *(and($a(9) $s(9)) $c(-2)) *(~(and($s(11) $s(12) $s(14) $s(15) $s(17) $s(18) $s(19))) $c(-5)))
+rewardfunction_end

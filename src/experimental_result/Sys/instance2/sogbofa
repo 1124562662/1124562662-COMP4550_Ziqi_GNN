@@ -1,0 +1,113 @@
+action
+reboot(c1)
+0
+action_end
+action
+reboot(c10)
+1
+action_end
+action
+reboot(c2)
+2
+action_end
+action
+reboot(c3)
+3
+action_end
+action
+reboot(c4)
+4
+action_end
+action
+reboot(c5)
+5
+action_end
+action
+reboot(c6)
+6
+action_end
+action
+reboot(c7)
+7
+action_end
+action
+reboot(c8)
+8
+action_end
+action
+reboot(c9)
+9
+action_end
+cpf
+running(c1)
+formula
+switch( ($a(0) : $c(1)) ($s(0) : Bernoulli(+(/(*(+($s(2) $s(5) $s(8) $c(1)) $c(0.5)) $c(4)) $c(0.45)))) ($c(1) : Bernoulli($c(0.05))) )
+formula_end
+index
+0
+cpf
+running(c10)
+formula
+switch( ($a(1) : $c(1)) ($s(1) : Bernoulli(+(/(*(+($s(0) $s(6) $c(1)) $c(0.5)) $c(3)) $c(0.45)))) ($c(1) : Bernoulli($c(0.05))) )
+formula_end
+index
+1
+cpf
+running(c2)
+formula
+switch( ($a(2) : $c(1)) ($s(2) : Bernoulli(+(/(*(+($s(5) $s(7) $s(9) $s(1) $c(1)) $c(0.5)) $c(5)) $c(0.45)))) ($c(1) : Bernoulli($c(0.05))) )
+formula_end
+index
+2
+cpf
+running(c3)
+formula
+switch( ($a(3) : $c(1)) ($s(3) : Bernoulli(+(/(*(+($s(4) $s(6) $c(1)) $c(0.5)) $c(3)) $c(0.45)))) ($c(1) : Bernoulli($c(0.05))) )
+formula_end
+index
+3
+cpf
+running(c4)
+formula
+switch( ($a(4) : $c(1)) ($s(4) : Bernoulli(+(/(*(+($s(3) $s(8) $s(1) $c(1)) $c(0.5)) $c(4)) $c(0.45)))) ($c(1) : Bernoulli($c(0.05))) )
+formula_end
+index
+4
+cpf
+running(c5)
+formula
+switch( ($a(5) : $c(1)) ($s(5) : Bernoulli(+(/(*(+($s(0) $s(4) $s(8) $s(9) $c(1)) $c(0.5)) $c(5)) $c(0.45)))) ($c(1) : Bernoulli($c(0.05))) )
+formula_end
+index
+5
+cpf
+running(c6)
+formula
+switch( ($a(6) : $c(1)) ($s(6) : Bernoulli(+(/(*(+($s(4) $s(9) $c(1)) $c(0.5)) $c(3)) $c(0.45)))) ($c(1) : Bernoulli($c(0.05))) )
+formula_end
+index
+6
+cpf
+running(c7)
+formula
+switch( ($a(7) : $c(1)) ($s(7) : Bernoulli(+(/(*(+($s(2) $s(3) $s(6) $c(1)) $c(0.5)) $c(4)) $c(0.45)))) ($c(1) : Bernoulli($c(0.05))) )
+formula_end
+index
+7
+cpf
+running(c8)
+formula
+switch( ($a(8) : $c(1)) ($s(8) : Bernoulli(+(/(*(+($s(2) $s(5) $s(7) $s(1) $c(1)) $c(0.5)) $c(5)) $c(0.45)))) ($c(1) : Bernoulli($c(0.05))) )
+formula_end
+index
+8
+cpf
+running(c9)
+formula
+switch( ($a(9) : $c(1)) ($s(9) : Bernoulli(+(/(*(+($s(7) $c(1)) $c(0.5)) $c(2)) $c(0.45)))) ($c(1) : Bernoulli($c(0.05))) )
+formula_end
+index
+9
+rewardfunction
++(-($s(0) *($a(0) $c(0.75))) -($s(2) *($a(2) $c(0.75))) -($s(3) *($a(3) $c(0.75))) -($s(4) *($a(4) $c(0.75))) -($s(5) *($a(5) $c(0.75))) -($s(6) *($a(6) $c(0.75))) -($s(7) *($a(7) $c(0.75))) -($s(8) *($a(8) $c(0.75))) -($s(9) *($a(9) $c(0.75))) -($s(1) *($a(1) $c(0.75))))
+rewardfunction_end

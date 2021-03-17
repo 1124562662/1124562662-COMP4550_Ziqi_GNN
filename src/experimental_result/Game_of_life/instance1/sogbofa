@@ -1,0 +1,102 @@
+action
+set(x1, y1)
+0
+action_end
+action
+set(x1, y2)
+1
+action_end
+action
+set(x1, y3)
+2
+action_end
+action
+set(x2, y1)
+3
+action_end
+action
+set(x2, y2)
+4
+action_end
+action
+set(x2, y3)
+5
+action_end
+action
+set(x3, y1)
+6
+action_end
+action
+set(x3, y2)
+7
+action_end
+action
+set(x3, y3)
+8
+action_end
+cpf
+alive(x1, y1)
+formula
+switch( (or(and($s(0) >=(+($s(1) $s(3) $s(4)) $c(2)) <=(+($s(1) $s(3) $s(4)) $c(3))) and(~($s(0)) ==(+($s(1) $s(3) $s(4)) $c(3))) $a(0)) : Bernoulli($c(0.979149733))) ($c(1) : Bernoulli($c(0.020850267))) )
+formula_end
+index
+0
+cpf
+alive(x1, y2)
+formula
+switch( (or(and($s(1) >=(+($s(0) $s(2) $s(3) $s(4) $s(5)) $c(2)) <=(+($s(0) $s(2) $s(3) $s(4) $s(5)) $c(3))) and(~($s(1)) ==(+($s(0) $s(2) $s(3) $s(4) $s(5)) $c(3))) $a(1)) : Bernoulli($c(0.968422893))) ($c(1) : Bernoulli($c(0.031577107))) )
+formula_end
+index
+1
+cpf
+alive(x1, y3)
+formula
+switch( (or(and($s(2) >=(+($s(1) $s(4) $s(5)) $c(2)) <=(+($s(1) $s(4) $s(5)) $c(3))) and(~($s(2)) ==(+($s(1) $s(4) $s(5)) $c(3))) $a(2)) : Bernoulli($c(0.97534661))) ($c(1) : Bernoulli($c(0.02465339))) )
+formula_end
+index
+2
+cpf
+alive(x2, y1)
+formula
+switch( (or(and($s(3) >=(+($s(0) $s(1) $s(4) $s(6) $s(7)) $c(2)) <=(+($s(0) $s(1) $s(4) $s(6) $s(7)) $c(3))) and(~($s(3)) ==(+($s(0) $s(1) $s(4) $s(6) $s(7)) $c(3))) $a(3)) : Bernoulli($c(0.982865365))) ($c(1) : Bernoulli($c(0.017134635))) )
+formula_end
+index
+3
+cpf
+alive(x2, y2)
+formula
+switch( (or(and($s(4) >=(+($s(0) $s(1) $s(2) $s(3) $s(5) $s(6) $s(7) $s(8)) $c(2)) <=(+($s(0) $s(1) $s(2) $s(3) $s(5) $s(6) $s(7) $s(8)) $c(3))) and(~($s(4)) ==(+($s(0) $s(1) $s(2) $s(3) $s(5) $s(6) $s(7) $s(8)) $c(3))) $a(4)) : Bernoulli($c(0.985782417))) ($c(1) : Bernoulli($c(0.014217583))) )
+formula_end
+index
+4
+cpf
+alive(x2, y3)
+formula
+switch( (or(and($s(5) >=(+($s(1) $s(2) $s(4) $s(7) $s(8)) $c(2)) <=(+($s(1) $s(2) $s(4) $s(7) $s(8)) $c(3))) and(~($s(5)) ==(+($s(1) $s(2) $s(4) $s(7) $s(8)) $c(3))) $a(5)) : Bernoulli($c(0.962609835))) ($c(1) : Bernoulli($c(0.037390165))) )
+formula_end
+index
+5
+cpf
+alive(x3, y1)
+formula
+switch( (or(and($s(6) >=(+($s(3) $s(4) $s(7)) $c(2)) <=(+($s(3) $s(4) $s(7)) $c(3))) and(~($s(6)) ==(+($s(3) $s(4) $s(7)) $c(3))) $a(6)) : Bernoulli($c(0.982644329))) ($c(1) : Bernoulli($c(0.017355671))) )
+formula_end
+index
+6
+cpf
+alive(x3, y2)
+formula
+switch( (or(and($s(7) >=(+($s(3) $s(4) $s(5) $s(6) $s(8)) $c(2)) <=(+($s(3) $s(4) $s(5) $s(6) $s(8)) $c(3))) and(~($s(7)) ==(+($s(3) $s(4) $s(5) $s(6) $s(8)) $c(3))) $a(7)) : Bernoulli($c(0.955000654))) ($c(1) : Bernoulli($c(0.044999346))) )
+formula_end
+index
+7
+cpf
+alive(x3, y3)
+formula
+switch( (or(and($s(8) >=(+($s(4) $s(5) $s(7)) $c(2)) <=(+($s(4) $s(5) $s(7)) $c(3))) and(~($s(8)) ==(+($s(4) $s(5) $s(7)) $c(3))) $a(8)) : Bernoulli($c(0.950443946))) ($c(1) : Bernoulli($c(0.049556054))) )
+formula_end
+index
+8
+rewardfunction
++(-($s(0) $a(0)) -($s(1) $a(1)) -($s(2) $a(2)) -($s(3) $a(3)) -($s(4) $a(4)) -($s(5) $a(5)) -($s(6) $a(6)) -($s(7) $a(7)) -($s(8) $a(8)))
+rewardfunction_end
