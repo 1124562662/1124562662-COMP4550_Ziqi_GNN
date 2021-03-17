@@ -62,7 +62,7 @@ void IPCClient::run(string const& instanceName, string& plannerDesc) {
 
     // 4550 tmp
 
-    //planner->rn = relation_net(parameter_domian, this->stateVariableIndices,   this->action_indices);
+    planner->rn = relation_net(parameter_domian, this->stateVariableIndices,   this->action_indices);
 
     planner->rn.set_state_pointer(&nextState);
    // relation_net::trainnet_(); SystemUtils::abort("training ends");
