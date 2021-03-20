@@ -553,7 +553,7 @@ void relation_net::read_modules(string path) {
         this->relation_node_growing_speed = stof(line);
 
         getline(taskFile, line);
-        assert(line == "time_step_K");
+        assert(line == "time_step_K ");
         getline(taskFile, line);
         this->time_step_K = stoi(line);
 
